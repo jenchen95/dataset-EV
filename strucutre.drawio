@@ -1,0 +1,60 @@
+<mxfile host="Electron" modified="2024-02-09T15:50:39.378Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="m_k38F1ahBKNKl9zRJLs" version="22.1.18" type="device">
+  <diagram name="Page-1" id="Z24IuPrhDwBY0-ZQbRCA">
+    <mxGraphModel dx="1026" dy="718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nlSuQ021Uz758ZtKiS2r-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="-Z4zkl6qQeAbOGGAQlyC-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="390" as="sourcePoint" />
+            <mxPoint x="540" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-1" value="dataset-EV" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-2" value="data_raw" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-3" value="data_task" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-4" value="data_man" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-5" value="vehicle_in_use_2005_2015_clean.xlsx" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="95" y="260" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-6" value="vehicle_in_use_2005_2015.xlsx&lt;br&gt;vehicle_in_use_2015_2020.xlsx" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="320" y="205" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-7" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="-Z4zkl6qQeAbOGGAQlyC-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="280" as="sourcePoint" />
+            <mxPoint x="280" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-8" value="clean&amp;amp;r10_ar6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-Z4zkl6qQeAbOGGAQlyC-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.0267" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nlSuQ021Uz758ZtKiS2r-1" value="src" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="195" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nlSuQ021Uz758ZtKiS2r-2" value="task_ev.py" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="260" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nlSuQ021Uz758ZtKiS2r-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="nlSuQ021Uz758ZtKiS2r-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="390" as="sourcePoint" />
+            <mxPoint x="450" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nlSuQ021Uz758ZtKiS2r-6" value="vehicle_in_use_r10.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="325" y="380" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

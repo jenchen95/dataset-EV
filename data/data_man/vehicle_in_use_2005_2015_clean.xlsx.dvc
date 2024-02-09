@@ -1,0 +1,5 @@
+outs:
+- md5: 7db5eee47a5dd7b8918c6fdc11106ffe
+  size: 33783
+  hash: md5
+  path: vehicle_in_use_2005_2015_clean.xlsx
