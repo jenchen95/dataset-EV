@@ -2,8 +2,8 @@
 import polars as pl
 import numpy as np
 from scipy.interpolate import CubicSpline
-# Read
 
+# Interpolate historical data for vehicle-in-use
 def fit_spline(series, years, parse=False):
     """
     Applies cubic spline interpolation to each column of the DataFrame.
@@ -59,7 +59,23 @@ vehicle_interp = (
     .group_by(['region','year','unit'])
     .agg(pl.sum('value').alias('value'))
     .sort('region','year')
+    .with_columns(value = pl.col('value') * 1000)
+    .with_columns(unit = pl.lit('vehicle'))
 )
-# Export
 
+# Read population data
+pop = pl.read_csv('../data/data_import/pop_medium_r10.csv')
+
+# Calculate vehicle per capita
+vehicle_per_capita = (
+    vehicle_interp.join(pop, on=['region', 'year'], how='inner', suffix='_pop')
+    .with_columns(vehicle_per_cap = pl.col('value') / pl.col('population'))
+    .with_columns(unit = pl.lit('vehicle_per_thousand'))
+    .select(pl.col('region','year','vehicle_per_cap','unit'))
+)
+
+# Export
 vehicle_interp.write_csv('../data/data_task/vehicle_in_use_r10.csv')
+vehicle_per_capita.write_csv('../data/data_task/vehicle_per_capita_r10.csv')
+
+

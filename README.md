@@ -8,4 +8,10 @@ vehicle_in_use_2005_2015: from 2005 to 2015; [Number of Vehicles in Use — KAPS
 
 pdf: [oica.net/wp-content/uploads/Total_in-use-All-Vehicles.pdf](https://www.oica.net/wp-content/uploads/Total_in-use-All-Vehicles.pdf)
 
+### data_import
+import data from other dvc repositories
+pop_medium_r10.csv: population data from dataset-population
+
 ### data_task
+vehicle_in_use_r10.csv: vehicle_in_use data in AR6 r10 category
+vehicle_per_capita_r10.csv: vehicle_per_capita data (caculated)

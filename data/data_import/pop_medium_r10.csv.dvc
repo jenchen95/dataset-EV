@@ -1,0 +1,13 @@
+md5: 58d1e38d8e1dcce68ee99b42f0617f94
+frozen: true
+deps:
+- path: data/data_task/pop_medium_r10.csv
+  repo:
+    url: git@gitee.com:chenhuang18/dataset-population.git
+    rev_lock: 8d665f4d370a7db458f04cf80a09f163596a55be
+    config: .dvc/config.local
+outs:
+- md5: d867f555cd3d9377557b1da465a169df
+  size: 62901
+  hash: md5
+  path: pop_medium_r10.csv
