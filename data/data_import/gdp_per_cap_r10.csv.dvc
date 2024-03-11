@@ -1,13 +1,13 @@
-md5: c393a31d8aaeef0778bf932be7a7b312
+md5: 04e095f400311e5688be43b1a75f68eb
 frozen: true
 deps:
 - path: data/data_task/gdp_per_cap_r10.csv
   repo:
     url: git@gitee.com:chenhuang18/dataset-population.git
-    rev_lock: bd3cb93a62ac0c7ae01495e99b473af48347d8c0
+    rev_lock: 1b38cdcceff19d07fcde061f25ed217129617163
     config: .dvc/config.local
 outs:
-- md5: 5196c8c4af46c53595416c5f7e8d4e7d
-  size: 64077
+- md5: 3981b9ce41b4fd382cced0ff5d00bffd
+  size: 34696
   hash: md5
   path: gdp_per_cap_r10.csv
