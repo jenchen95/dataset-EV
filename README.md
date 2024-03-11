@@ -10,7 +10,9 @@ pdf: [oica.net/wp-content/uploads/Total_in-use-All-Vehicles.pdf](https://www.oic
 
 ### data_import
 import data from other dvc repositories
-pop_medium_r10.csv: population data from dataset-population
+pop_medium_r10.csv: population data from dataset-population, here r10 refers to category r10, not data from ar6
+gdp_per_cap_r10.csv: gdp per capita data from dataset-population, here r10 refers to category r10, not data from ar6
+gdp_per_cap_future.parquet: gdp per capita data from dataset-ar6
 
 ### data_task
 vehicle_in_use_r10.csv: vehicle_in_use data in AR6 r10 category
