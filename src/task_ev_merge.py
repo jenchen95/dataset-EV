@@ -4,6 +4,7 @@ import polars as pl
 # Join gdp and vehicle data
 gdp_vehicle = (
     pl.read_csv('../data/data_import/gdp_per_cap_r10.csv')
+    .filter(pl.col('year')<=2020)  # owing to no vehicle data in 2021, but gdp data exists
     .with_columns(model=pl.lit('historical'))
     .with_columns(scenario=pl.lit('historical'))
     .with_columns(unit=pl.lit('US$(2010)'))

@@ -1,13 +1,13 @@
-md5: 9f57215df84c28fa57aa01829f5c971c
+md5: fabd0cff6348f076932a9c4e699bb19d
 frozen: true
 deps:
 - path: data/data_task/gdp_per_cap_future.parquet
   repo:
     url: git@gitee.com:chenhuang18/dataset-ar6.git
-    rev_lock: 35d46c861533d347ca1f97141a55257a07e1d705
+    rev_lock: a1fc2b05fd83301c5312310bba96c1bf49231779
     config: .dvc/config.local
 outs:
-- md5: 7d82a32a705ab7f2e0236234609a818d
-  size: 3032765
+- md5: fefcf8dc3f64734a3057e056695be52d
+  size: 2989272
   hash: md5
   path: gdp_per_cap_future.parquet
