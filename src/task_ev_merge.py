@@ -23,7 +23,7 @@ gdp_vehicle = (
         suffix='_vehicle'
     )
     .with_columns(vehicle_per_cap=pl.col('vehicle_per_cap') / 1000) # vehicle per 1000 to vehicle per cap
-    .with_columns(unit_vehicle=pl.lit('vehicle_per_capita'))
+    .with_columns(unit_vehicle=pl.lit('vehicle'))
     .join(
         pl.read_csv('../data/data_man/vehicle_saturation.csv'),
         on=['region'],

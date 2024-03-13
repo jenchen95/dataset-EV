@@ -36,8 +36,9 @@ for k in r10_list['region'].to_list():
     beta = params[0]
     print("拟合参数: beta =", params[0])
     data_hist = (
-        data_hist.with_columns(alpha=alpha)
-        .with_columns(beta=beta)
+        data_hist
+        .with_columns(vehicle=(pl.col('population') * pl.col('vehicle_per_cap')).round(0))
+        .with_columns(alpha=alpha, beta=beta)
         .lazy()
     )
     data_concat.append(data_hist)
@@ -51,9 +52,11 @@ for k in r10_list['region'].to_list():
             .filter(pl.col('year')>=2021)
             .sort('year')
             .with_columns(vehicle_per_cap=model(pl.col('gdp_per_cap'), alpha, beta, saturation))
+            .with_columns(vehicle=(pl.col('population') * pl.col('vehicle_per_cap')).round(0))
             .with_columns(alpha=alpha, beta=beta)
             )
         data_concat.append(data_forecast)
+
 # 步骤4：合并
 data_concat = pl.concat(data_concat)
 data_concat.sink_parquet('../data/data_task/gdp_vehicle_fitting.parquet')
