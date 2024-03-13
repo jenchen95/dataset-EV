@@ -7,7 +7,10 @@ gdp_vehicle = (
     .filter(pl.col('year')<=2020)  # owing to no vehicle data in 2021, but gdp data exists
     .with_columns(model=pl.lit('historical'))
     .with_columns(scenario=pl.lit('historical'))
-    .select(pl.col('model','scenario','region','year','gdp_per_cap','unit'))
+    .select(pl.col('model','scenario','region','year','gdp_per_cap','unit','population'))
+    .with_columns(population=pl.col('population') * 1000)
+    .cast({'population':pl.Int64})
+    .with_columns(unit_pop=pl.lit('person'))
     .vstack(
         pl.read_parquet('../data/data_import/gdp_per_cap_future.parquet')
     )
