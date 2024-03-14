@@ -59,4 +59,16 @@ for k in r10_list['region'].to_list():
 
 # 步骤4：合并
 data_concat = pl.concat(data_concat)
+
+# 步骤5：Join EV普及率
+data_concat = (
+    data_concat.join(
+        pl.scan_csv('../data/data_task/EV_penetration_rate_interp.csv'),
+        on = ['region', 'year'],
+        how = 'left',
+        suffix = '_ev_rate'
+    )
+    .with_columns(ev=(pl.col('vehicle') * pl.col('ev_rate') / 100).round(0))
+)
+
 data_concat.sink_parquet('../data/data_task/gdp_vehicle_fitting.parquet')

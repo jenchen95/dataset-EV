@@ -74,8 +74,33 @@ vehicle_per_capita = (
     .select(pl.col('region','year','vehicle_per_cap','unit'))
 )
 
+# Interpolate EV penetration rate
+ev_rate = (
+    pl.read_csv('../data/data_man/EV_penetration_rate.csv')
+    .melt(id_vars=['region','note','unit'], variable_name='year')
+    .cast({'year':pl.Int64})
+)
+
+ev_rate_interp = []
+for k in ev_rate['region'].unique().to_list():
+    region = ev_rate.filter(pl.col('region') == k).select(pl.col('year','value')).sort('year')
+    years = region['year']
+    rate = region['value']
+    rate = fit_spline(rate, years, parse=False)
+    ev_rate_interp.append(
+        pl.DataFrame({'year': np.arange(years[0], years[-1]+1),
+                      'ev_rate': rate})
+          .with_columns(pl.lit(k).alias('region'), pl.lit('%').alias('unit'))
+    )
+ev_rate_interp = (
+    pl.concat(ev_rate_interp)
+    .select('region','year','ev_rate','unit')
+)
+
 # Export
 vehicle_interp.write_csv('../data/data_task/vehicle_in_use_r10.csv')
 vehicle_per_capita.write_csv('../data/data_task/vehicle_per_capita_r10.csv')
+
+ev_rate_interp.write_csv('../data/data_task/EV_penetration_rate_interp.csv')
 
 

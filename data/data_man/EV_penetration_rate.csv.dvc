@@ -1,0 +1,5 @@
+outs:
+- md5: 5e74a7af717909478ec0a11839273d68
+  size: 2474
+  hash: md5
+  path: EV_penetration_rate.csv

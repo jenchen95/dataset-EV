@@ -1,13 +1,13 @@
-<mxfile host="Electron" modified="2024-03-13T15:10:33.004Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" version="22.1.18" etag="sRG2MCPPXiTWLZ6RfJ1m" type="device">
+<mxfile host="Electron" modified="2024-03-14T13:38:22.932Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="o9aY4WSyD5dE4f09_QIu" version="22.1.18" type="device">
   <diagram name="Page-1" id="Z24IuPrhDwBY0-ZQbRCA">
-    <mxGraphModel dx="1659" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1229" dy="1451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="tiek8Za3D-JlFyLIjHAd-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="tiek8Za3D-JlFyLIjHAd-10">
+        <mxCell id="tiek8Za3D-JlFyLIjHAd-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.979;exitY=0.949;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="tiek8Za3D-JlFyLIjHAd-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="473" y="455" as="sourcePoint" />
-            <mxPoint x="530" y="490" as="targetPoint" />
+            <mxPoint x="251.86000000000013" y="299.03999999999996" as="sourcePoint" />
+            <mxPoint x="520" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="1w62KZlR1Oq3MYPWtMm6-3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="1w62KZlR1Oq3MYPWtMm6-2" edge="1">
@@ -16,31 +16,31 @@
             <mxPoint x="580" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nlSuQ021Uz758ZtKiS2r-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="-Z4zkl6qQeAbOGGAQlyC-5" edge="1">
+        <mxCell id="nlSuQ021Uz758ZtKiS2r-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.991;exitY=0.633;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-Z4zkl6qQeAbOGGAQlyC-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="550" y="390" as="sourcePoint" />
             <mxPoint x="600" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="-Z4zkl6qQeAbOGGAQlyC-1" value="dataset-EV" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="354" y="50" width="120" height="60" as="geometry" />
+          <mxGeometry x="355" y="-50" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-Z4zkl6qQeAbOGGAQlyC-2" value="data_raw" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="354" y="150" width="120" height="60" as="geometry" />
+          <mxGeometry x="354" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-Z4zkl6qQeAbOGGAQlyC-3" value="data_task" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="354" y="285" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-Z4zkl6qQeAbOGGAQlyC-4" value="data_man" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="150" y="145" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-Z4zkl6qQeAbOGGAQlyC-5" value="vehicle_in_use_2005_2015_clean.xlsx" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="95" y="260" width="230" height="30" as="geometry" />
+          <mxGeometry x="94" y="210" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-Z4zkl6qQeAbOGGAQlyC-6" value="vehicle_in_use_2005_2015.xlsx&lt;br&gt;vehicle_in_use_2015_2020.xlsx" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="320" y="205" width="190" height="40" as="geometry" />
+          <mxGeometry x="320" y="130" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-7" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="-Z4zkl6qQeAbOGGAQlyC-6" edge="1">
+        <mxCell id="-Z4zkl6qQeAbOGGAQlyC-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.133;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-Z4zkl6qQeAbOGGAQlyC-6" target="-Z4zkl6qQeAbOGGAQlyC-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="290" y="280" as="sourcePoint" />
             <mxPoint x="280" y="270" as="targetPoint" />
@@ -118,26 +118,53 @@
             <mxPoint x="540" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tiek8Za3D-JlFyLIjHAd-6" value="task_ev_fit.py" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="tiek8Za3D-JlFyLIjHAd-6" value="task_ev_fit.py" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="640" y="435" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tiek8Za3D-JlFyLIjHAd-7" value="gdp_vehicle_fitting.parquet" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="tiek8Za3D-JlFyLIjHAd-7" value="gdp_vehicle_fitting.parquet" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="324" y="490" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tiek8Za3D-JlFyLIjHAd-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.021;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tiek8Za3D-JlFyLIjHAd-6" target="tiek8Za3D-JlFyLIjHAd-7">
+        <mxCell id="tiek8Za3D-JlFyLIjHAd-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.021;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="tiek8Za3D-JlFyLIjHAd-6" target="tiek8Za3D-JlFyLIjHAd-7" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="703" y="342" as="sourcePoint" />
             <mxPoint x="490" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tiek8Za3D-JlFyLIjHAd-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.904;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5">
+        <mxCell id="tiek8Za3D-JlFyLIjHAd-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.996;exitY=0.946;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="650" y="474" as="sourcePoint" />
-            <mxPoint x="560" y="480" as="targetPoint" />
+            <mxPoint x="600" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tiek8Za3D-JlFyLIjHAd-10" value="r10_list.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="170" y="285" width="80" height="30" as="geometry" />
+        <mxCell id="tiek8Za3D-JlFyLIjHAd-10" value="r10_list.csv&lt;br&gt;vehicle_saturation.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="135" y="255" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xbtZZn2FhjRSgY0GdMx2-6" value="EV_penetration_rate.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="135" y="230" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xbtZZn2FhjRSgY0GdMx2-7" value="IEA Global EV Data 2023.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="414" y="170" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xbtZZn2FhjRSgY0GdMx2-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.483;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.998;entryY=0.497;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xbtZZn2FhjRSgY0GdMx2-7" target="xbtZZn2FhjRSgY0GdMx2-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="332" y="239" as="sourcePoint" />
+            <mxPoint x="610" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfzEh4_naNPXCD5BkDMQ-6" value="EV_penetration_rate_interp.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="385" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pfzEh4_naNPXCD5BkDMQ-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.897;exitY=0.967;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="xbtZZn2FhjRSgY0GdMx2-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="420" as="sourcePoint" />
+            <mxPoint x="600" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfzEh4_naNPXCD5BkDMQ-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.496;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="nlSuQ021Uz758ZtKiS2r-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="675" y="280" as="sourcePoint" />
+            <mxPoint x="490" y="400" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
