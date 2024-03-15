@@ -1,5 +1,5 @@
 outs:
-- md5: a38aa3b0d4c2d28f2f4bd236e426ed54
-  size: 7103681
+- md5: 8fe508f41a1922733b2e9e8746525ca3
+  size: 7947291
   hash: md5
   path: gdp_vehicle_fitting.parquet
