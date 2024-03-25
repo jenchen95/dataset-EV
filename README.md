@@ -30,6 +30,8 @@ gdp_vehicle.parquet: 2005-2100, merge gdp_per_cap and vehicle_per_cap data
 EV_penetration_rate_interp: 2005-2060 interpolated
 gdp_vehicle_fitting.parquet: 2005-2100, vehicle_per_cap and gdp_percap fitting, and vehicle and ev calculation
 
+task_ev.duckdb: join tables from gdp_vehicle_fitting.parquet and category.csv
+
 ### data_man
 r10_list.csv: regions' name for r10
 vehicle_saturation.csv: regional settings for vehicle_saturation
