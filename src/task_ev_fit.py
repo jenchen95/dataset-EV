@@ -49,7 +49,7 @@ for k in r10_list['region'].to_list():
             data.filter(pl.col('model')==i)
             .filter(pl.col('scenario')==j)
             .filter(pl.col('region')==k)
-            .filter(pl.col('year')>=2021)
+            .filter(pl.col('year')>=2020)
             .sort('year')
             .with_columns(vehicle_per_cap=model(pl.col('gdp_per_cap'), alpha, beta, saturation))
             .with_columns(vehicle=(pl.col('population') * pl.col('vehicle_per_cap')).round(0))
