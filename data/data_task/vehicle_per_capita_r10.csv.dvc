@@ -1,0 +1,5 @@
+outs:
+- md5: 3b4c0d27a8c804d76216d949f07060a0
+  size: 8965
+  hash: md5
+  path: vehicle_per_capita_r10.csv

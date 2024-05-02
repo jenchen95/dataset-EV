@@ -20,9 +20,17 @@ def fit_spline(series, years, parse=False):
     fit_years = df['year'].to_numpy()
     fit_values = df.select(pl.exclude('year')).to_numpy()
 
-    spline = CubicSpline(fit_years, fit_values)
+    constant_ranges = []
+    for i in range(len(fit_values) - 1):
+        if fit_values[i] == fit_values[i + 1]:
+            constant_ranges.append((years[i], years[i + 1]))
+
+    spline = CubicSpline(fit_years, fit_values, bc_type='natural')
     # Predict for all years using the fitted spline interpolation
     granu_values = spline(granu_years)
+
+    for start, end in constant_ranges:
+        granu_values[(granu_years >= start) & (granu_years <= end)] = granu_values[granu_years == start]
 
     # Ensure all values are non-negative
     granu_values = np.maximum(granu_values, 0)
