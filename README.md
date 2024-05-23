@@ -1,3 +1,6 @@
+# Dataset of Electric Vehicle (EV)
+This dataset is used to calculate the number of electric vehicles (EV) in the future. It includes the number of vehicles in use, population, and GDP per capita. Using Gompertz model fitting, it forecasts the number of vehicles in the future based on the IPCC AR6 regions.
+
 ## src
 task_ev_interp.py: interpolation for vehicle and vehicle_per_cap
 
