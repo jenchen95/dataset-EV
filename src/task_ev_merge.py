@@ -20,14 +20,22 @@ gdp_vehicle = (
         pl.read_csv('../data/data_task/vehicle_per_capita_r10.csv'),
         on=['region','year'],
         how='left',
-        suffix='_vehicle'
+        suffix='_vehicle',
+        coalesce=True
     )
     .with_columns(vehicle_per_cap=pl.col('vehicle_per_cap') / 1000) # vehicle per 1000 to vehicle per cap
     .with_columns(unit_vehicle=pl.lit('vehicle'))
     .join(
+        pl.read_csv('../data/data_raw/category.csv'),
+        on=['model','scenario'],
+        how='left',
+        coalesce=True,
+    )
+    .join(
         pl.read_csv('../data/data_man/vehicle_saturation.csv'),
-        on=['region'],
-        how='left'
+        on=['category','region'],
+        how='left',
+        coalesce=True,
     )
     .with_columns(saturation=pl.col('saturation') / 1000)  # vehicle per 1000 to vehicle per cap
     .filter(pl.col('year')>=2005)  # earliest vehicle data from 2005

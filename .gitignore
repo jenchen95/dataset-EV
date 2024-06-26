@@ -2,3 +2,4 @@ data/data_raw
 pic/
 data/data_task/gdp_vehicle.parquet
 data/data_task/EV_penetration_rate_interp.csv
+data/data_man/vehicle_saturation_.csv
