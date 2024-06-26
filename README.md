@@ -37,6 +37,6 @@ task_ev.duckdb: join tables from gdp_vehicle_fitting.parquet and category.csv
 
 ### data_man
 r10_list.csv: regions' name for r10
-vehicle_saturation.csv: regional settings for vehicle_saturation
+vehicle_saturation.csv: regional settings for vehicle_saturation by cateogry (median across model scenario)
 EV_penetration_rate: 2005-2060, regional settings for EV penetration rate (historical and forecasting), based on data_raw/IEA Global EV Data 2023.csv (historical and APS scenario's cars type)
 vehicle_in_use_2005_2015_clean.xlsx: clean version for data_raw/vehicle_in_use_2005_2020.xlsx (two files)
